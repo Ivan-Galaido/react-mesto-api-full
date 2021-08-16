@@ -19,7 +19,7 @@
     "winston": "^3.3.3"
   },
   "scripts": {
-    "lint": "npx eslint",
+    "lint": "npx eslint .",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
