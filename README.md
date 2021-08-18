@@ -3,6 +3,7 @@
   
 
 https://mestechko.nomoredomains.club
+
 https://mestechko.students.nomoredomains.club
 
 178.154.193.83 Public IP
