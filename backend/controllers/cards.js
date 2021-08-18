@@ -8,8 +8,6 @@ exports.getCards = (req, res, next) => {
     .then((cards) => {
       if (cards.length >= 1) {
         res.send(cards);
-      } else {
-        throw new NotFoundError('Карточки не найдены');
       }
     })
     .catch(next);
@@ -58,9 +56,6 @@ exports.deleteCard = (req, res, next) => {
 
 exports.likeCard = (req, res, next) => {
   Card.findByIdAndUpdate(
-    console.log(req.params.cardId),
-    console.log(req.user._id),
-    console.log(req),
     req.params.cardId,
     { $addToSet: { likes: req.user._id } },
     { new: true },
