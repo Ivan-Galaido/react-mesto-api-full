@@ -1,5 +1,6 @@
 const BadRequestError = require('../errors/400-bad-request-error');
 const NotFoundError = require('../errors/404-not-found-error');
+const ForbiddenError = require('../errors/403-forbidden-error');
 const Card = require('../models/card');
 
 exports.getCards = (req, res, next) => {
